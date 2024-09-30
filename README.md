@@ -31,10 +31,6 @@ To run the Stopwatch web application locally:
    ```
 3. Open the `index.html` file in your preferred web browser.
 
-## Preview
-
-![Stopwatch Screenshot](screenshot.png)  <!-- Add a screenshot of your stopwatch here -->
-
 ## Usage
 
 1. Click the **Start** button to begin timing.
