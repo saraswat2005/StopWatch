@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(to right, #c7b8ea, #6f69d3);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Stopwatch Display Styles */
+  #display {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Styling */
+  button {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Lap List Styling */
+  ul#lap-times li {
+    background: rgba(111, 105, 211, 0.1);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+  }
+  
+  ul#lap-times li:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  

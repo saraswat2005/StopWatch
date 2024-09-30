@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-purple-800 text-white p-4">
+    <nav class="max-w-md mx-auto flex justify-between">
+      <h1 class="text-2xl font-bold">Stopwatch</h1>
+      <ul class="list-none flex">
+        <li class="mr-4"><a href="#" class="text-white hover:text-gray-300">About</a></li>
+        <li><a href="#" class="text-white hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="max-w-md mx-auto p-6 mt-10 bg-white bg-opacity-60 rounded-lg shadow-md">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold mb-6">Stopwatch</h1>
+
+      <!-- Stopwatch Display -->
+      <div class="relative w-64 h-64 mx-auto bg-center rounded-full mb-6 flex items-center justify-center">
+        <div id="display" class="text-5xl font-bold p-12">00:00:00.00</div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex justify-center mb-6">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2" id="start-button">Start</button>
+        <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mr-2" id="pause-button">Pause</button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2" id="lap-button">Lap</button>
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" id="restart-button">Restart</button>
+        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ml-2" id="reset-button">Reset</button>
+      </div>
+
+      <!-- Lap Times List -->
+      <div class="text-left">
+        <h2 class="text-2xl font-bold mb-4">Lap Times</h2>
+        <ul id="lap-times" class="list-none"></ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
